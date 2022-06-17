@@ -11,9 +11,16 @@
 		C627F2F3285C837300F7594D /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627F2F2285C837300F7594D /* APIConstants.swift */; };
 		C627F2F5285C8AB100F7594D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627F2F4285C8AB100F7594D /* Constants.swift */; };
 		C627F2F8285C965A00F7594D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627F2F7285C965A00F7594D /* UIView+Extensions.swift */; };
-		C627F2FA285C96A000F7594D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627F2F9285C96A000F7594D /* HomeView.swift */; };
 		C6C1822E285C9B7200030542 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C6C1822D285C9B7200030542 /* Realm */; };
 		C6C18230285C9B7200030542 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C6C1822F285C9B7200030542 /* RealmSwift */; };
+		C6C18233285C9DB800030542 /* StartupScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C18232285C9DB800030542 /* StartupScreenViewModel.swift */; };
+		C6C18235285C9DF600030542 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C18234285C9DF600030542 /* BaseViewModel.swift */; };
+		C6C18237285C9EE300030542 /* RealmServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C18236285C9EE300030542 /* RealmServices.swift */; };
+		C6C18239285CA12200030542 /* AppSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C18238285CA12200030542 /* AppSlider.swift */; };
+		C6C1823C285CA6B300030542 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C1823B285CA6B300030542 /* HomeScreen.swift */; };
+		C6C18240285CB81E00030542 /* HomeScreenCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C1823F285CB81E00030542 /* HomeScreenCarousel.swift */; };
+		C6C18243285CB93000030542 /* HomeScreenCarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C18242285CB93000030542 /* HomeScreenCarouselViewModel.swift */; };
+		C6C18246285CB98800030542 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C6C18245285CB98800030542 /* SwiftyJSON */; };
 		C6C90946285C5C3A000236EA /* NaheedPk_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C90945285C5C3A000236EA /* NaheedPk_SwiftUIApp.swift */; };
 		C6C9094A285C5C3B000236EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C90949285C5C3B000236EA /* Assets.xcassets */; };
 		C6C9094D285C5C3B000236EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C9094C285C5C3B000236EA /* Preview Assets.xcassets */; };
@@ -47,7 +54,14 @@
 		C627F2F2285C837300F7594D /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		C627F2F4285C8AB100F7594D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C627F2F7285C965A00F7594D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		C627F2F9285C96A000F7594D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C6C18232285C9DB800030542 /* StartupScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupScreenViewModel.swift; sourceTree = "<group>"; };
+		C6C18234285C9DF600030542 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		C6C18236285C9EE300030542 /* RealmServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServices.swift; sourceTree = "<group>"; };
+		C6C18238285CA12200030542 /* AppSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSlider.swift; sourceTree = "<group>"; };
+		C6C1823B285CA6B300030542 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		C6C1823D285CA94D00030542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C6C1823F285CB81E00030542 /* HomeScreenCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCarousel.swift; sourceTree = "<group>"; };
+		C6C18242285CB93000030542 /* HomeScreenCarouselViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCarouselViewModel.swift; sourceTree = "<group>"; };
 		C6C90942285C5C3A000236EA /* NaheedPk-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NaheedPk-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C90945285C5C3A000236EA /* NaheedPk_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaheedPk_SwiftUIApp.swift; sourceTree = "<group>"; };
 		C6C90949285C5C3B000236EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C18246285CB98800030542 /* SwiftyJSON in Frameworks */,
 				C6C18230285C9B7200030542 /* RealmSwift in Frameworks */,
 				C6C1822E285C9B7200030542 /* Realm in Frameworks */,
 			);
@@ -97,6 +112,38 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C6C18231285C9DA500030542 /* Startup Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C6C18232285C9DB800030542 /* StartupScreenViewModel.swift */,
+			);
+			path = "Startup Screen";
+			sourceTree = "<group>";
+		};
+		C6C1823A285CA69200030542 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C6C1823B285CA6B300030542 /* HomeScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C6C1823E285CB7DE00030542 /* HomeScreen Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6C1823F285CB81E00030542 /* HomeScreenCarousel.swift */,
+			);
+			path = "HomeScreen Views";
+			sourceTree = "<group>";
+		};
+		C6C18241285CB90900030542 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C6C18242285CB93000030542 /* HomeScreenCarouselViewModel.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
 		C6C90939285C5C3A000236EA = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +167,8 @@
 		C6C90944285C5C3A000236EA /* NaheedPk-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				C6C1823D285CA94D00030542 /* Info.plist */,
+				C6C1823A285CA69200030542 /* Screens */,
 				C627F2F6285C964E00F7594D /* Extensions */,
 				C6C90973285C6399000236EA /* Services */,
 				C6C90972285C6393000236EA /* ViewModels */,
@@ -170,6 +219,7 @@
 		C6C90970285C6383000236EA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C6C18238285CA12200030542 /* AppSlider.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,9 +227,9 @@
 		C6C90971285C638D000236EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C6C1823E285CB7DE00030542 /* HomeScreen Views */,
 				C6C90979285C79C4000236EA /* StartupScreen */,
 				C6C90974285C6435000236EA /* NavigationViews */,
-				C627F2F9285C96A000F7594D /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +237,9 @@
 		C6C90972285C6393000236EA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C6C18241285CB90900030542 /* HomeScreen */,
+				C6C18231285C9DA500030542 /* Startup Screen */,
+				C6C18234285C9DF600030542 /* BaseViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -195,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				C627F2F0285C827B00F7594D /* NetworkManager.swift */,
+				C6C18236285C9EE300030542 /* RealmServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -235,6 +289,7 @@
 			packageProductDependencies = (
 				C6C1822D285C9B7200030542 /* Realm */,
 				C6C1822F285C9B7200030542 /* RealmSwift */,
+				C6C18245285CB98800030542 /* SwiftyJSON */,
 			);
 			productName = "NaheedPk-SwiftUI";
 			productReference = C6C90942285C5C3A000236EA /* NaheedPk-SwiftUI.app */;
@@ -310,6 +365,7 @@
 			mainGroup = C6C90939285C5C3A000236EA;
 			packageReferences = (
 				C6C1822C285C9B7200030542 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				C6C18244285CB98800030542 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = C6C90943285C5C3A000236EA /* Products */;
 			projectDirPath = "";
@@ -353,15 +409,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C18240285CB81E00030542 /* HomeScreenCarousel.swift in Sources */,
+				C6C18233285C9DB800030542 /* StartupScreenViewModel.swift in Sources */,
+				C6C18243285CB93000030542 /* HomeScreenCarouselViewModel.swift in Sources */,
+				C6C18235285C9DF600030542 /* BaseViewModel.swift in Sources */,
+				C6C18239285CA12200030542 /* AppSlider.swift in Sources */,
 				C627F2F1285C827B00F7594D /* NetworkManager.swift in Sources */,
 				C627F2F3285C837300F7594D /* APIConstants.swift in Sources */,
 				C6C90978285C6EED000236EA /* SearchBarView.swift in Sources */,
-				C627F2FA285C96A000F7594D /* HomeView.swift in Sources */,
+				C6C1823C285CA6B300030542 /* HomeScreen.swift in Sources */,
 				C627F2F8285C965A00F7594D /* UIView+Extensions.swift in Sources */,
 				C6C90976285C6444000236EA /* HomeNavigationView.swift in Sources */,
 				C627F2F5285C8AB100F7594D /* Constants.swift in Sources */,
 				C6C9097B285C79D8000236EA /* StartupView.swift in Sources */,
 				C6C90946285C5C3A000236EA /* NaheedPk_SwiftUIApp.swift in Sources */,
+				C6C18237285C9EE300030542 /* RealmServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +584,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NaheedPk-SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NaheedPk-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -551,6 +614,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NaheedPk-SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NaheedPk-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -692,6 +756,14 @@
 				kind = branch;
 			};
 		};
+		C6C18244285CB98800030542 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -704,6 +776,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C6C1822C285C9B7200030542 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		C6C18245285CB98800030542 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6C18244285CB98800030542 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -45,7 +45,8 @@ struct HomeNavigationView: View {
             }
         }
         .padding()
-        .background(Color("NativeBlueColor"))
+        .padding(.bottom, -12)
+        .background(Color(NativeBlueColor))
     }
 }
 

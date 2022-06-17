@@ -25,11 +25,11 @@ struct SearchBarView: View {
                 .padding(.bottom, 0)
             }
             .frame(height: 45)
-            .background(.white)
+            .background(Color.white)
             .cornerRadius(25)
         }
         .padding()
-        .background(Color("NativeBlueColor"))
+        .background(Color(NativeBlueColor))
     }
 }
 

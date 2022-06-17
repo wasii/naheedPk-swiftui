@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C627F2F1285C827B00F7594D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627F2F0285C827B00F7594D /* NetworkManager.swift */; };
+		C627F2F3285C837300F7594D /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627F2F2285C837300F7594D /* APIConstants.swift */; };
+		C627F2F5285C8AB100F7594D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627F2F4285C8AB100F7594D /* Constants.swift */; };
+		C627F2F8285C965A00F7594D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627F2F7285C965A00F7594D /* UIView+Extensions.swift */; };
+		C627F2FA285C96A000F7594D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627F2F9285C96A000F7594D /* HomeView.swift */; };
+		C6C1822E285C9B7200030542 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C6C1822D285C9B7200030542 /* Realm */; };
+		C6C18230285C9B7200030542 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C6C1822F285C9B7200030542 /* RealmSwift */; };
 		C6C90946285C5C3A000236EA /* NaheedPk_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C90945285C5C3A000236EA /* NaheedPk_SwiftUIApp.swift */; };
-		C6C90948285C5C3A000236EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C90947285C5C3A000236EA /* ContentView.swift */; };
 		C6C9094A285C5C3B000236EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C90949285C5C3B000236EA /* Assets.xcassets */; };
 		C6C9094D285C5C3B000236EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C9094C285C5C3B000236EA /* Preview Assets.xcassets */; };
 		C6C90957285C5C3B000236EA /* NaheedPk_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C90956285C5C3B000236EA /* NaheedPk_SwiftUITests.swift */; };
@@ -37,9 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C627F2F0285C827B00F7594D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C627F2F2285C837300F7594D /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		C627F2F4285C8AB100F7594D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C627F2F7285C965A00F7594D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		C627F2F9285C96A000F7594D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C6C90942285C5C3A000236EA /* NaheedPk-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NaheedPk-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C90945285C5C3A000236EA /* NaheedPk_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaheedPk_SwiftUIApp.swift; sourceTree = "<group>"; };
-		C6C90947285C5C3A000236EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C6C90949285C5C3B000236EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6C9094C285C5C3B000236EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6C90952285C5C3B000236EA /* NaheedPk-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NaheedPk-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C18230285C9B7200030542 /* RealmSwift in Frameworks */,
+				C6C1822E285C9B7200030542 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C627F2F6285C964E00F7594D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C627F2F7285C965A00F7594D /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C6C90939285C5C3A000236EA = {
 			isa = PBXGroup;
 			children = (
@@ -100,13 +120,13 @@
 		C6C90944285C5C3A000236EA /* NaheedPk-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				C627F2F6285C964E00F7594D /* Extensions */,
 				C6C90973285C6399000236EA /* Services */,
 				C6C90972285C6393000236EA /* ViewModels */,
 				C6C90971285C638D000236EA /* Views */,
 				C6C90970285C6383000236EA /* Models */,
 				C6C9096F285C637D000236EA /* Constants */,
 				C6C90945285C5C3A000236EA /* NaheedPk_SwiftUIApp.swift */,
-				C6C90947285C5C3A000236EA /* ContentView.swift */,
 				C6C90949285C5C3B000236EA /* Assets.xcassets */,
 				C6C9094B285C5C3B000236EA /* Preview Content */,
 			);
@@ -141,6 +161,8 @@
 		C6C9096F285C637D000236EA /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				C627F2F2285C837300F7594D /* APIConstants.swift */,
+				C627F2F4285C8AB100F7594D /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -157,6 +179,7 @@
 			children = (
 				C6C90979285C79C4000236EA /* StartupScreen */,
 				C6C90974285C6435000236EA /* NavigationViews */,
+				C627F2F9285C96A000F7594D /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +194,7 @@
 		C6C90973285C6399000236EA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C627F2F0285C827B00F7594D /* NetworkManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -208,6 +232,10 @@
 			dependencies = (
 			);
 			name = "NaheedPk-SwiftUI";
+			packageProductDependencies = (
+				C6C1822D285C9B7200030542 /* Realm */,
+				C6C1822F285C9B7200030542 /* RealmSwift */,
+			);
 			productName = "NaheedPk-SwiftUI";
 			productReference = C6C90942285C5C3A000236EA /* NaheedPk-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -280,6 +308,9 @@
 				Base,
 			);
 			mainGroup = C6C90939285C5C3A000236EA;
+			packageReferences = (
+				C6C1822C285C9B7200030542 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = C6C90943285C5C3A000236EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -322,9 +353,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C627F2F1285C827B00F7594D /* NetworkManager.swift in Sources */,
+				C627F2F3285C837300F7594D /* APIConstants.swift in Sources */,
 				C6C90978285C6EED000236EA /* SearchBarView.swift in Sources */,
+				C627F2FA285C96A000F7594D /* HomeView.swift in Sources */,
+				C627F2F8285C965A00F7594D /* UIView+Extensions.swift in Sources */,
 				C6C90976285C6444000236EA /* HomeNavigationView.swift in Sources */,
-				C6C90948285C5C3A000236EA /* ContentView.swift in Sources */,
+				C627F2F5285C8AB100F7594D /* Constants.swift in Sources */,
 				C6C9097B285C79D8000236EA /* StartupView.swift in Sources */,
 				C6C90946285C5C3A000236EA /* NaheedPk_SwiftUIApp.swift in Sources */,
 			);
@@ -492,6 +527,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -501,7 +537,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -520,6 +556,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,7 +566,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -645,6 +682,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6C1822C285C9B7200030542 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6C1822D285C9B7200030542 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6C1822C285C9B7200030542 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		C6C1822F285C9B7200030542 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6C1822C285C9B7200030542 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C6C9093A285C5C3A000236EA /* Project object */;
 }

@@ -12,10 +12,10 @@ struct StartupView: View {
     var body: some View {
         VStack {
             if self.isActive {
-                ContentView()
+                HomeView()
                     .transition(.slide)
             } else {
-                Color("NativeBlueColor")
+                Color(NativeBlueColor)
                     .ignoresSafeArea(.all)
                     .overlay(
                         VStack {

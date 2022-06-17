@@ -6,15 +6,26 @@
 //
 
 import SwiftUI
-
 struct HomeScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            VStack(spacing: 0) {
+                HomeNavigationView()
+                    .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top ?? 0)
+                SearchBarView(searchTextFieldValue: "")
+                
+                Spacer()
+            }
+            .ignoresSafeArea(.all)
+        }
+        .background(Color(NativeBlueColor).edgesIgnoringSafeArea(.all))
+        .embedNavigationView()
     }
 }
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
         HomeScreen()
+            .previewDevice("iPhone X")
     }
 }

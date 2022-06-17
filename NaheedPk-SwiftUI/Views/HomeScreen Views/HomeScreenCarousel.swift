@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct HomeScreenCarousel: View {
+    @ObservedObject private var appSlider: HomeScreenCarouselViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//        TabView {
+//
+//        }
+//        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+        Text("")
     }
 }
 
 struct HomeScreenCarousel_Previews: PreviewProvider {
     static var previews: some View {
         HomeScreenCarousel()
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

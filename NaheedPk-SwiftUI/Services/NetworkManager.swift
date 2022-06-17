@@ -27,11 +27,11 @@ class NetworkManager: NSObject {
         self.aPICalling = aPICalling
     }
     
-    func fetchData<T: Codable>(url: String, requesttype: RequestType, type: T.Type, params: [String:Any]?, onCompletion: @escaping(Result<T, APIError>) -> Void) {
+    func fetchData<T: Codable>(url: String, requesttype: RequestType, type: T.Type, params: [String:Any]?, token: String?, onCompletion: @escaping(Result<T, APIError>) -> Void) {
         guard let url = URL(string: url) else {
             return
         }
-        self.aPICalling.callServer(url: url, requesttype: requesttype, params: params) { result in
+        self.aPICalling.callServer(url: url, requesttype: requesttype, params: params, token: token) { result in
             switch result {
             case .success(let data):
                 self.responseHandler.handleResponse(type: type, data: data) { decoded in
@@ -51,7 +51,7 @@ class NetworkManager: NSObject {
 }
 
 class APICalling {
-    func callServer(url: URL, requesttype:RequestType, params: [String:Any]?, onCompletion: @escaping(Result<Data, APIError>) -> Void) {
+    func callServer(url: URL, requesttype:RequestType, params: [String:Any]?, token: String?, onCompletion: @escaping(Result<Data, APIError>) -> Void) {
         var request = URLRequest(url: url)
         switch requesttype {
         case .get:
@@ -59,11 +59,17 @@ class APICalling {
         case .post:
             request.httpMethod = "POST"
         }
-        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
-        if let httpBody = try? JSONSerialization.data(withJSONObject: params ?? [:], options: []) {
-            request.httpBody = httpBody
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        if params != nil {
+            if let httpBody = try? JSONSerialization.data(withJSONObject: params ?? [:], options: []) {
+                request.httpBody = httpBody
+            }
         }
-        
+        if let token = token {
+            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        }
+        request.setValue("okhttp", forHTTPHeaderField: "User-Agent")
         let session = URLSession.shared
         session.dataTask(with: request) { (data, _, error) in
             guard let data = data else {

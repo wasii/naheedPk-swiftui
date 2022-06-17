@@ -6,15 +6,17 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct StartupView: View {
+    @ObservedObject private var startupViewModel: StartupScreenViewModel
     @State var isActive:Bool = false
+    init() {
+        self.startupViewModel = StartupScreenViewModel()
+    }
     var body: some View {
         VStack {
-            if self.isActive {
-                HomeView()
-                    .transition(.slide)
-            } else {
+            if self.startupViewModel.token == "" {
                 Color(NativeBlueColor)
                     .ignoresSafeArea(.all)
                     .overlay(
@@ -25,13 +27,9 @@ struct StartupView: View {
                                 .padding(.horizontal, 20)
                         }
                     )
-            }
-        }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
-                withAnimation {
-                    self.isActive = true
-                }
+            } else {
+                HomeScreen()
+                    .transition(.slide)
             }
         }
     }

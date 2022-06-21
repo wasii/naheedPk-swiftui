@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SearchBarView: View {
-    @State var searchTextFieldValue: String
+    @State var searchTextFieldValue: String = ""
     var body: some View {
         ZStack {
             HStack {
@@ -35,6 +35,6 @@ struct SearchBarView: View {
 
 struct SearchBarView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBarView(searchTextFieldValue: "").previewLayout(.sizeThatFits)
+        SearchBarView().previewLayout(.sizeThatFits)
     }
 }

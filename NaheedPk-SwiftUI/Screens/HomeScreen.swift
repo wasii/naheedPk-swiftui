@@ -7,25 +7,37 @@
 
 import SwiftUI
 struct HomeScreen: View {
+//    @ObservedObject var appDashboard: HomeScreenDashboardViewModel
+//    
+//    init() {
+//        self.appDashboard = HomeScreenDashboardViewModel()
+//    }
     var body: some View {
-        ZStack {
-            VStack(spacing: 0) {
-                HomeNavigationView()
-                    .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top ?? 0)
-                SearchBarView(searchTextFieldValue: "")
-                
-                Spacer()
+        VStack(spacing: 0) {
+            HomeNavigationView()
+                .frame(maxWidth: .infinity)
+                .background(Color(NativeBlueColor).edgesIgnoringSafeArea(.top))
+                .frame(maxWidth: .infinity)
+            SearchBarView(searchTextFieldValue: "")
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 0) {
+                    HomeScreenCarousel()
+                        .frame(height: UIScreen.main.bounds.width / 1.8)
+                    HomeScreenCategoriesView()
+                        .frame(width: UIScreen.main.bounds.width)
+                    BlocksView()
+                        
+                    Spacer()
+                }
             }
-            .ignoresSafeArea(.all)
+            Spacer()
         }
-        .background(Color(NativeBlueColor).edgesIgnoringSafeArea(.all))
-        .embedNavigationView()
     }
 }
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
         HomeScreen()
-            .previewDevice("iPhone X")
+            .previewDevice("iPhone 8")
     }
 }

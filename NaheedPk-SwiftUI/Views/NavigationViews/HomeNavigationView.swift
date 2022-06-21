@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct HomeNavigationView: View {
-    @State var itemCounts: Int = 10
+    @State var itemCounts: Int = 0
     var body: some View {
         HStack {
-            Button(action: {}) {
-                Image(systemName: "line.3.horizontal")
+            Button(action: {
+                debugPrint("Side Menu Btn Tapped")
+            }) {
+                Image("menu")
                     .font(.title)
                     .foregroundColor(.white)
             }
@@ -20,9 +22,12 @@ struct HomeNavigationView: View {
                 Image("Logo")
                     .resizable()
                     .frame(width: 150, height: 35, alignment: .trailing)
+                    .padding(.leading, 10)
             }
             Spacer()
-            Button(action: {}) {
+            Button(action: {
+                debugPrint("Cart Btn Tapped")
+            }) {
                 ZStack {
                     Image(systemName: "cart")
                         .font(.title)
@@ -37,7 +42,9 @@ struct HomeNavigationView: View {
                         .offset(x: 13, y: -10)
                 }
             }
-            Button(action: {}) {
+            Button(action: {
+                debugPrint("Menu Btn Tapped")
+            }) {
                 Image(systemName: "ellipsis")
                     .font(.custom("", size: 25))
                     .foregroundColor(.white)

@@ -1,0 +1,130 @@
+[
+  {
+    "android_version": "1.0.9",
+    "android_force_update": "1",
+    "android_url": "com.naheed.naheedpk",
+    "ios_version": "1.0",
+    "ios_force_update": "1",
+    "ios_url": null,
+    "sliders": [
+      {
+        "image": "1-carousel",
+        "link_type": "Category",
+        "link": "230"
+      },
+      {
+        "image": "2-carousel",
+        "link_type": "Manufacturer Landing",
+        "link": "1020"
+      },
+      {
+        "image": "3-carousel",
+        "link_type": null,
+        "link": null
+      },
+      {
+        "image": "4-carousel",
+        "link_type": "Manufacturer Landing",
+        "link": "510"
+      },
+      {
+        "image": "5-carousel",
+        "link_type": "Manufacturer Landing",
+        "link": "614"
+      }
+    ],
+    "categories": [
+      {
+        "title": "Groceries & Pets",
+        "image": "1-category",
+        "category": "46",
+        "url": "https://www.naheed.pk/groceries-pets/"
+      },
+      {
+        "title": "Health & Beauty",
+        "image": "2-category",
+        "category": "11",
+        "url": "https://www.naheed.pk/health-beauty/"
+      },
+      {
+        "title": "Phones & Tablets",
+        "image": "3-category",
+        "category": "191",
+        "url": "https://www.naheed.pk/phones-tablets/"
+      },
+      {
+        "title": "TV & Home Appliances",
+        "image": "4-category",
+        "category": "230",
+        "url": "https://www.naheed.pk/tv-home-appliances/"
+      },
+      {
+        "title": "Women's Fashion",
+        "image": "5-category",
+        "category": "256",
+        "url": "https://www.naheed.pk/womens-fashion/"
+      },
+      {
+        "title": "Naheed Products",
+        "image": "6-category",
+        "category": "253",
+        "url": "https://www.naheed.pk/naheed-products/"
+      },
+      {
+        "title": "Kids & Babies",
+        "image": "7-category",
+        "category": "56",
+        "url": "https://www.naheed.pk/kids-babies/"
+      },
+      {
+        "title": "All Categories",
+        "image": "8-category",
+        "category": "0",
+        "url": "https://www.naheed.pk/all-categories/"
+      }
+    ],
+    "template_page_limit": 2,
+    "template": [
+      {
+        "row_type": "product_grid",
+        "row_value": "1"
+      },
+      {
+        "row_type": "image_block",
+        "row_value": "1"
+      },
+      {
+        "row_type": "product_grid",
+        "row_value": "2"
+      },
+      {
+        "row_type": "product_grid",
+        "row_value": "3"
+      },
+      {
+        "row_type": "image_block",
+        "row_value": "2"
+      },
+      {
+        "row_type": "product_grid",
+        "row_value": "4"
+      },
+      {
+        "row_type": "product_grid",
+        "row_value": "5"
+      },
+      {
+        "row_type": "image_block",
+        "row_value": "3"
+      },
+      {
+        "row_type": "product_grid",
+        "row_value": "6"
+      },
+      {
+        "row_type": "product_grid",
+        "row_value": "7"
+      }
+    ]
+  }
+]

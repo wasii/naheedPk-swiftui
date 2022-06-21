@@ -1,0 +1,330 @@
+[
+  {
+    "type": "product_grid",
+    "data": {
+      "grid_title": "Deal Of The Day",
+      "background": "grid-background",
+      "view_link_type": "Category",
+      "view_link": "323",
+      "products": [
+        {
+          "id": "23198",
+          "sku": "IC-1083337",
+          "name": "Dawlance Cooking Series Microwave Oven, 30 Liters, DW-131 HP",
+          "price": "Rs. 26,500.00",
+          "final_price": "Rs. 26,500.00",
+          "discount": false,
+          "discount_percent": 0,
+          "karachi_only": false,
+          "city_icon": "",
+          "country_flag": "",
+          "image": "grid-1",
+          "image_medium": "https://media.naheed.pk/catalog/product/cache/fd6f1e57839b9b324771e8de21428b3f/1/0/1083337-1.jpg",
+          "reviews_summary": "0.0",
+          "reviews_count": null,
+          "discount_height": false,
+          "reviews_height": false
+        },
+        {
+          "id": "12603",
+          "sku": "IC-1126355",
+          "name": "Braun FX 3030 TributeCollection Food Processor",
+          "price": "Rs. 41,000.00",
+          "final_price": "Rs. 41,000.00",
+          "discount": false,
+          "discount_percent": 0,
+          "karachi_only": false,
+          "city_icon": "",
+          "country_flag": "",
+          "image": "grid-2",
+          "image_medium": "https://media.naheed.pk/catalog/product/cache/fd6f1e57839b9b324771e8de21428b3f/1/1/1126355-1.jpg",
+          "reviews_summary": "0.0",
+          "reviews_count": null,
+          "discount_height": false,
+          "reviews_height": false
+        },
+        {
+          "id": "42042",
+          "sku": "IC-1210301",
+          "name": "Emporio Armani Stronger With You Freeze Eau De Toilette, for Men 100ml - Deal 10",
+          "price": "Rs. 13,500.00",
+          "final_price": "Rs. 13,500.00",
+          "discount": false,
+          "discount_percent": 0,
+          "karachi_only": false,
+          "city_icon": "",
+          "country_flag": "",
+          "image": "grid-3",
+          "image_medium": "https://media.naheed.pk/catalog/product/cache/fd6f1e57839b9b324771e8de21428b3f/1/2/1210301-1_1.jpg",
+          "reviews_summary": "0.0",
+          "reviews_count": null,
+          "discount_height": false,
+          "reviews_height": false
+        },
+        {
+          "id": "18306",
+          "sku": "IC-1152336",
+          "name": "Braun Multi Quick 3 Smoothie + Hand Blender, MQ3000",
+          "price": "Rs. 11,200.00",
+          "final_price": "Rs. 11,200.00",
+          "discount": false,
+          "discount_percent": 0,
+          "karachi_only": false,
+          "city_icon": "",
+          "country_flag": "",
+          "image": "grid-4",
+          "image_medium": "https://media.naheed.pk/catalog/product/cache/fd6f1e57839b9b324771e8de21428b3f/b/r/braun_multiquick_3_smoothie_hand_blender_stainless_steel_mq-3000_new_1_1.jpg",
+          "reviews_summary": "0.0",
+          "reviews_count": null,
+          "discount_height": false,
+          "reviews_height": false
+        }
+      ],
+      "review_available": ""
+    }
+  },
+  {
+    "type": "image_block",
+    "data": {
+      "title": "Trending Brands",
+      "rows": [
+        {
+          "columns": "1",
+          "images": [
+            {
+              "image": "block-1",
+              "link_type": "Manufacturer Landing",
+              "link_value": "741"
+            }
+          ]
+        },
+        {
+          "columns": "1",
+          "images": [
+            {
+              "image": "block-2",
+              "link_type": "Manufacturer Landing",
+              "link_value": "1262"
+            }
+          ]
+        },
+        {
+          "columns": "1",
+          "images": [
+            {
+              "image": "block-3",
+              "link_type": "Manufacturer Landing",
+              "link_value": "2418"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "product_grid",
+    "data": {
+      "grid_title": "Mobile Phones",
+      "background": "https://media.naheed.pk/apphome_products/b/g/bg-blue_6_4.png",
+      "view_link_type": "Category",
+      "view_link": "191",
+      "products": [
+        {
+          "id": "63499",
+          "sku": "IC-1227598",
+          "name": "Joyroom Chery Mirror iPhone 13 Pro Max Protective Phone Case, Silver, JR-BP909",
+          "price": "Rs. 1,400.00",
+          "final_price": "Rs. 1,400.00",
+          "discount": false,
+          "discount_percent": 0,
+          "karachi_only": false,
+          "city_icon": "",
+          "country_flag": "",
+          "image": "grid-5",
+          "image_medium": "https://media.naheed.pk/catalog/product/cache/fd6f1e57839b9b324771e8de21428b3f/1/2/1227598-1.jpg",
+          "reviews_summary": "0.0",
+          "reviews_count": null,
+          "discount_height": false,
+          "reviews_height": false
+        },
+        {
+          "id": "65029",
+          "sku": "IC-1229482",
+          "name": "Joyroom 2.4A Bowling Data Lightening Data Cable, 1m, Black, S-1030M8",
+          "price": "Rs. 425.00",
+          "final_price": "Rs. 425.00",
+          "discount": false,
+          "discount_percent": 0,
+          "karachi_only": false,
+          "city_icon": "",
+          "country_flag": "",
+          "image": "grid-6",
+          "image_medium": "https://media.naheed.pk/catalog/product/cache/fd6f1e57839b9b324771e8de21428b3f/1/2/1229482-1.jpg",
+          "reviews_summary": "0.0",
+          "reviews_count": null,
+          "discount_height": false,
+          "reviews_height": false
+        },
+        {
+          "id": "53026",
+          "sku": "IC-1218904",
+          "name": "Hoco U40A Magnetic Absorption Lightening Charging Cable",
+          "price": "Rs. 1,900.00",
+          "final_price": "Rs. 1,900.00",
+          "discount": false,
+          "discount_percent": 0,
+          "karachi_only": false,
+          "city_icon": "",
+          "country_flag": "",
+          "image": "grid-7",
+          "image_medium": "https://media.naheed.pk/catalog/product/cache/fd6f1e57839b9b324771e8de21428b3f/1/2/1218904-1.jpg",
+          "reviews_summary": "0.0",
+          "reviews_count": null,
+          "discount_height": false,
+          "reviews_height": false
+        },
+        {
+          "id": "23491",
+          "sku": "IC-1187904",
+          "name": "Aukey Braided Nylon USB 3.1 Gen1 To USB-C Cable, 3.95ft, CB-AC1",
+          "price": "Rs. 1,500.00",
+          "final_price": "Rs. 1,500.00",
+          "discount": false,
+          "discount_percent": 0,
+          "karachi_only": false,
+          "city_icon": "",
+          "country_flag": "",
+          "image": "grid-8",
+          "image_medium": "https://media.naheed.pk/catalog/product/cache/fd6f1e57839b9b324771e8de21428b3f/1/1/1187904-1.jpg",
+          "reviews_summary": "0.0",
+          "reviews_count": null,
+          "discount_height": false,
+          "reviews_height": false
+        }
+      ],
+      "review_available": ""
+    }
+  },
+  {
+    "type": "product_grid",
+    "data": {
+      "grid_title": "Perfumes",
+      "background": "https://media.naheed.pk/apphome_products/b/g/bg-blue_6_3.png",
+      "view_link_type": "Category",
+      "view_link": "28",
+      "products": [
+        {
+          "id": "2649",
+          "sku": "IC-1151094",
+          "name": "Armani Because It's You Eau de Parfum 100ml",
+          "price": "Rs. 17,000.00",
+          "final_price": "Rs. 17,000.00",
+          "discount": false,
+          "discount_percent": 0,
+          "karachi_only": false,
+          "city_icon": "",
+          "country_flag": "",
+          "image": "grid-9",
+          "image_medium": "https://media.naheed.pk/catalog/product/cache/fd6f1e57839b9b324771e8de21428b3f/1/1/1151094-1.jpg",
+          "reviews_summary": "0.0",
+          "reviews_count": null,
+          "discount_height": false,
+          "reviews_height": false
+        },
+        {
+          "id": "14925",
+          "sku": "IC-1177057",
+          "name": "Rasasi Rumz Al Rasasi 9325 Zebra Pour Lui Eau de Parfum, 50ml",
+          "price": "Rs. 4,600.00",
+          "final_price": "Rs. 4,600.00",
+          "discount": false,
+          "discount_percent": 0,
+          "karachi_only": false,
+          "city_icon": "",
+          "country_flag": "",
+          "image": "grid-10",
+          "image_medium": "https://media.naheed.pk/catalog/product/cache/fd6f1e57839b9b324771e8de21428b3f/1/1/1177057-1.jpg",
+          "reviews_summary": "0.0",
+          "reviews_count": null,
+          "discount_height": false,
+          "reviews_height": false
+        },
+        {
+          "id": "68868",
+          "sku": "IC-1232615",
+          "name": "Junaid Jamshed Club House Perfume Body Spray, 200ml",
+          "price": "Rs. 450.00",
+          "final_price": "Rs. 450.00",
+          "discount": false,
+          "discount_percent": 0,
+          "karachi_only": false,
+          "city_icon": "",
+          "country_flag": "",
+          "image": "grid-11",
+          "image_medium": "https://media.naheed.pk/catalog/product/cache/fd6f1e57839b9b324771e8de21428b3f/1/2/1232615-1.jpg",
+          "reviews_summary": "0.0",
+          "reviews_count": null,
+          "discount_height": false,
+          "reviews_height": false
+        },
+        {
+          "id": "2016",
+          "sku": "IC-1048499",
+          "name": "Azzaro Chrome Eau de Toilette 100ml",
+          "price": "Rs. 9,100.00",
+          "final_price": "Rs. 9,100.00",
+          "discount": false,
+          "discount_percent": 0,
+          "karachi_only": false,
+          "city_icon": "",
+          "country_flag": "",
+          "image": "grid-12",
+          "image_medium": "https://media.naheed.pk/catalog/product/cache/fd6f1e57839b9b324771e8de21428b3f/1/0/1048499-1.jpg",
+          "reviews_summary": "0.0",
+          "reviews_count": null,
+          "discount_height": false,
+          "reviews_height": false
+        }
+      ],
+      "review_available": ""
+    }
+  },
+  {
+    "type": "image_block",
+    "data": {
+      "title": "Sponsored Brands",
+      "rows": [
+        {
+          "columns": "1",
+          "images": [
+            {
+              "image": "block-4",
+              "link_type": "Manufacturer List",
+              "link_value": "501"
+            }
+          ]
+        },
+        {
+          "columns": "1",
+          "images": [
+            {
+              "image": "block-5",
+              "link_type": "Manufacturer Landing",
+              "link_value": "2715"
+            }
+          ]
+        },
+        {
+          "columns": "1",
+          "images": [
+            {
+              "image": "block-6",
+              "link_type": "Manufacturer Landing",
+              "link_value": "1895"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "image": "1-carousel",
+    "link_type": "Category",
+    "link": "230"
+  },
+  {
+    "image": "2-carousel",
+    "link_type": "Manufacturer Landing",
+    "link": "1020"
+  },
+  {
+    "image": "3-carousel",
+    "link_type": null,
+    "link": null
+  },
+  {
+    "image": "4-carousel",
+    "link_type": "Manufacturer Landing",
+    "link": "510"
+  },
+  {
+    "image": "5-carousel",
+    "link_type": "Manufacturer Landing",
+    "link": "614"
+  }
+]

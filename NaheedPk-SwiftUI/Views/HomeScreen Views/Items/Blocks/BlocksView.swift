@@ -12,13 +12,13 @@ struct BlocksView: View {
     let images: [String] = ["block-1", "block-2", "block-3"]
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            TitleView(title: "Trending Brands")
+            TitleView(title: "Trending Brands", shouldHideButton: true)
             VStack(spacing: 12) {
                 ForEach(images, id: \.self) { image in
                     Image(image)
                         .resizable()
-                        .frame(height: 120)
-                        .cornerRadius(15)
+                        .frame(height: 100)
+                        .cornerRadius(10)
                         .shadow(color: Color.black.opacity(0.4), radius: 5.0, x: 0, y: 0)
                 }
             }

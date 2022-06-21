@@ -25,3 +25,6 @@ let rowSpacing: CGFloat = 10
 var gridLayout: [GridItem] {
     return Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 4)
 }
+var gridLayouts: [GridItem] {
+    return Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 4)
+}

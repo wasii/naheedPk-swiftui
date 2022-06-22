@@ -10,35 +10,44 @@ import SwiftUI
 struct GridItemView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
-            ZStack {
+            ZStack(alignment: .center) {
                 Image("grid-1")
                     .resizable()
                     .scaledToFit()
-                    .frame(maxWidth: 225, maxHeight: 225)
+                    .frame(maxWidth:.infinity, maxHeight: .infinity)
+                    .cornerRadius(10)
             }
-            Text("Dawlance Cooking Series Microwave Oven, 30 Liters, DW-131 HP")
-                .font(.footnote)
-                .multilineTextAlignment(.leading)
-                .lineLimit(3)
-            Text("Rs. 26,500.00")
-                .font(.footnote)
-                .fontWeight(.semibold)
-            Text("Rs. 29,500.00")
-                .font(.footnote)
-                .fontWeight(.light)
-                .background(
-                    Color.gray
-                        .frame(height:1)
-                )
-            HStack(spacing: 5) {
-                ForEach(1...5, id: \.self) { _ in
-                    Image(systemName: "star.fill")
-                        .foregroundColor(Color.yellow)
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Dawlance Cooking Series Microwave Oven, 30 Liters, DW-131 HP")
+                    .font(.footnote)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(3)
+                Text("Rs. 26,500.00")
+                    .font(.footnote)
+                    .fontWeight(.semibold)
+                Text("Rs. 29,500.00")
+                    .font(.footnote)
+                    .fontWeight(.light)
+                    .background(
+                        Color.gray
+                            .frame(height:1)
+                    )
+                HStack(spacing: 5) {
+                    ForEach(1...5, id: \.self) { _ in
+                        Image(systemName: "star.fill")
+                            .font(.footnote)
+                            .foregroundColor(Color.yellow)
+                    }
                 }
             }
+            .padding(.horizontal, 10)
+            .padding(.vertical, 4)
+            
         }
-        .border(.gray, width: 1)
-        .cornerRadius(10)
+        .overlay(
+            RoundedRectangle(cornerRadius: 0)
+                .stroke(Color.gray, lineWidth: 0.5)
+        )
         .overlay(
             HStack {
                 VStack {
@@ -58,7 +67,7 @@ struct GridItemView: View {
                 }
             }
         )
-        .padding()
+        .frame(minWidth: 170, maxWidth: UIScreen.main.bounds.width / 2, minHeight: 150, maxHeight: .infinity)
     }
 }
 

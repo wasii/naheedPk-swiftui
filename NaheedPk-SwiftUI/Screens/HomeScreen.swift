@@ -18,13 +18,14 @@ struct HomeScreen: View {
                 .frame(maxWidth: .infinity)
                 .background(Color(NativeBlueColor).edgesIgnoringSafeArea(.top))
                 .frame(maxWidth: .infinity)
-            SearchBarView(searchTextFieldValue: "")
+            SearchBarView()
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 0) {
                     HomeScreenCarousel()
                         .frame(height: UIScreen.main.bounds.width / 1.8)
                     HomeScreenCategoriesView()
                         .frame(width: UIScreen.main.bounds.width)
+                    GridParentView()
                     BlocksView()
                         
                     Spacer()

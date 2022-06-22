@@ -11,10 +11,18 @@ struct GridParentView: View {
     var body: some View {
         VStack {
             TitleView(title: "Mobile Phones", shouldHideButton: false)
-            LazyVGrid(columns: gridLayouts, alignment: .center, spacing: 0, pinnedViews: []) {
-                GridItemView()
-            }
+            VStack {
+                LazyVGrid(columns: gridLayouts, alignment: .center, spacing: 3, pinnedViews: []) {
+                    GridItemView()
+                    GridItemView()
+                    GridItemView()
+                    GridItemView()
+                }
+            }.background(
+                Color.white
+            )
         }
+        .padding()
         .background(
             Image("grid-background")
                 .resizable()

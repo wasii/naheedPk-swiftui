@@ -11,6 +11,8 @@
 		C627F2F3285C837300F7594D /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627F2F2285C837300F7594D /* APIConstants.swift */; };
 		C627F2F5285C8AB100F7594D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627F2F4285C8AB100F7594D /* Constants.swift */; };
 		C627F2F8285C965A00F7594D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C627F2F7285C965A00F7594D /* UIView+Extensions.swift */; };
+		C66192E528631DF500D0A117 /* HomeGridsBlocksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66192E428631DF500D0A117 /* HomeGridsBlocksView.swift */; };
+		C66192E828634FD900D0A117 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C66192E728634FD900D0A117 /* SDWebImageSwiftUI */; };
 		C6949D642861FA1F00C0FB9E /* GridParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6949D632861FA1F00C0FB9E /* GridParentView.swift */; };
 		C6949D662861FD2900C0FB9E /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6949D652861FD2800C0FB9E /* GridItemView.swift */; };
 		C6A27135285CDCFF00BB717C /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = C6A27134285CDCFF00BB717C /* URLImage */; };
@@ -69,6 +71,7 @@
 		C627F2F2285C837300F7594D /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		C627F2F4285C8AB100F7594D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C627F2F7285C965A00F7594D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		C66192E428631DF500D0A117 /* HomeGridsBlocksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGridsBlocksView.swift; sourceTree = "<group>"; };
 		C6949D632861FA1F00C0FB9E /* GridParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridParentView.swift; sourceTree = "<group>"; };
 		C6949D652861FD2800C0FB9E /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 		C6A27139285DAB9500BB717C /* appdashboard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appdashboard.json; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C66192E828634FD900D0A117 /* SDWebImageSwiftUI in Frameworks */,
 				C6A27137285CDCFF00BB717C /* URLImageStore in Frameworks */,
 				C6C18246285CB98800030542 /* SwiftyJSON in Frameworks */,
 				C6C18230285C9B7200030542 /* RealmSwift in Frameworks */,
@@ -340,6 +344,7 @@
 				C6D22B7B2861E6CA00034F27 /* Grids */,
 				C6D22B7A2861E6C500034F27 /* Blocks */,
 				C6D22B832861EB9F00034F27 /* TitleView.swift */,
+				C66192E428631DF500D0A117 /* HomeGridsBlocksView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -383,6 +388,7 @@
 				C6C18245285CB98800030542 /* SwiftyJSON */,
 				C6A27134285CDCFF00BB717C /* URLImage */,
 				C6A27136285CDCFF00BB717C /* URLImageStore */,
+				C66192E728634FD900D0A117 /* SDWebImageSwiftUI */,
 			);
 			productName = "NaheedPk-SwiftUI";
 			productReference = C6C90942285C5C3A000236EA /* NaheedPk-SwiftUI.app */;
@@ -460,6 +466,7 @@
 				C6C1822C285C9B7200030542 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				C6C18244285CB98800030542 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				C6A27133285CDCFF00BB717C /* XCRemoteSwiftPackageReference "url-image" */,
+				C66192E628634FD900D0A117 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = C6C90943285C5C3A000236EA /* Products */;
 			projectDirPath = "";
@@ -515,6 +522,7 @@
 				C6A27148285F059500BB717C /* CategoryView.swift in Sources */,
 				C6949D642861FA1F00C0FB9E /* GridParentView.swift in Sources */,
 				C627F2F1285C827B00F7594D /* NetworkManager.swift in Sources */,
+				C66192E528631DF500D0A117 /* HomeGridsBlocksView.swift in Sources */,
 				C627F2F3285C837300F7594D /* APIConstants.swift in Sources */,
 				C6D22B802861E81D00034F27 /* BlocksView.swift in Sources */,
 				C6A2713E285DAF2100BB717C /* CarouselView.swift in Sources */,
@@ -855,6 +863,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C66192E628634FD900D0A117 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		C6A27133285CDCFF00BB717C /* XCRemoteSwiftPackageReference "url-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
@@ -882,6 +898,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C66192E728634FD900D0A117 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C66192E628634FD900D0A117 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		C6A27134285CDCFF00BB717C /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C6A27133285CDCFF00BB717C /* XCRemoteSwiftPackageReference "url-image" */;

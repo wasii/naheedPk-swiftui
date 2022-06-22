@@ -23,10 +23,28 @@ extension Bundle {
         let decode = JSONDecoder()
         
         //4. create a property 'decodedData' for the decoded data
-        guard let decodedData = try? decode.decode(T.self, from: data) else {
-            fatalError("Failed to decode \(file) from bundle")
+        do {
+            let loadedData = try decode.decode(T.self, from: data)
+//            debugPrint(loadedData)
+            return loadedData
+        }  catch let DecodingError.dataCorrupted(context) {
+            print(context)
+            fatalError()
+        } catch let DecodingError.keyNotFound(key, context) {
+            print("Key '\(key)' not found:", context.debugDescription)
+            print("codingPath:", context.codingPath)
+            fatalError()
+        } catch let DecodingError.valueNotFound(value, context) {
+            print("Value '\(value)' not found:", context.debugDescription)
+            print("codingPath:", context.codingPath)
+            fatalError()
+        } catch let DecodingError.typeMismatch(type, context)  {
+            print("Type '\(type)' mismatch:", context.debugDescription)
+            print("codingPath:", context.codingPath)
+            fatalError()
+        } catch {
+            print("error: ", error)
+            fatalError()
         }
-        //5. return the ready-to-use dat
-        return decodedData
     }
 }

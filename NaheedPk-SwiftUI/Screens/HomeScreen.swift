@@ -7,11 +7,11 @@
 
 import SwiftUI
 struct HomeScreen: View {
-//    @ObservedObject var appDashboard: HomeScreenDashboardViewModel
-//    
-//    init() {
-//        self.appDashboard = HomeScreenDashboardViewModel()
-//    }
+    @ObservedObject var appDashboard: HomeScreenDashboardViewModel
+    
+    init() {
+        self.appDashboard = HomeScreenDashboardViewModel()
+    }
     var body: some View {
         VStack(spacing: 0) {
             HomeNavigationView()
@@ -21,10 +21,23 @@ struct HomeScreen: View {
             SearchBarView()
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 0) {
-                    HomeScreenCarousel()
-                        .frame(height: UIScreen.main.bounds.width / 1.8)
-                    HomeScreenCategoriesView()
-                        .frame(width: UIScreen.main.bounds.width)
+                    VStack {
+                        if !self.appDashboard.appSliders.isEmpty {
+                            HomeScreenCarousel(appSlider: self.appDashboard.appSliders)
+                        }
+                    }.frame(height: UIScreen.main.bounds.width / 1.8)
+                    VStack {
+                        if !self.appDashboard.appCategories.isEmpty {
+                            HomeScreenCategoriesView()
+                        }
+                    }
+                    .frame(height: UIScreen.main.bounds.width / 1.3)
+                    .frame(width: UIScreen.main.bounds.width)
+                    VStack {
+                        if !self.appDashboard.appDashboardGrids.isEmpty {
+                            HomeGridsBlocksView(dashboardCategory: <#T##DashboardCategories#>)
+                        }
+                    }
                     GridParentView()
                     BlocksView()
                         

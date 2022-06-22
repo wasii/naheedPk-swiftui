@@ -83,10 +83,33 @@ class APICalling {
 class ResponseHandler {
     func handleResponse<T:Codable>(type: T.Type, data: Data, onCompletion: @escaping(Result<T, APIError>) -> Void) {
         
-        if let response = try? JSONDecoder().decode(type.self, from: data) {
+        do {
+            let response = try JSONDecoder().decode(type.self, from: data)
             return onCompletion(.success(response))
-        } else {
+        } catch let DecodingError.dataCorrupted(context) {
+            print(context)
+            return onCompletion(.failure(.DecodingError))
+        } catch let DecodingError.keyNotFound(key, context) {
+            print("Key '\(key)' not found:", context.debugDescription)
+            print("codingPath:", context.codingPath)
+            return onCompletion(.failure(.DecodingError))
+        } catch let DecodingError.valueNotFound(value, context) {
+            print("Value '\(value)' not found:", context.debugDescription)
+            print("codingPath:", context.codingPath)
+            return onCompletion(.failure(.DecodingError))
+        } catch let DecodingError.typeMismatch(type, context)  {
+            print("Type '\(type)' mismatch:", context.debugDescription)
+            print("codingPath:", context.codingPath)
+            return onCompletion(.failure(.DecodingError))
+        } catch {
+            print("error: ", error)
             return onCompletion(.failure(.DecodingError))
         }
+        
+//        if let response = try? JSONDecoder().decode(type.self, from: data) {
+//            return onCompletion(.success(response))
+//        } else {
+//            return onCompletion(.failure(.DecodingError))
+//        }
     }
 }

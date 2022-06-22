@@ -12,4 +12,5 @@ struct APIConstant {
     static let BASEUrl = "https://www.naheed.pk/index.php/rest/V1/naheed-customapi/"
     static let GETGUESTTOKEN = BASEUrl + "guesttoken"
     static let APPDASHBOARD = BASEUrl + "appdashboard"
+    static let APPDASHBOARDGRID = BASEUrl  + "dashboardgrids?page="
 }

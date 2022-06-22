@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct GridParentView: View {
+//    var title: String
+    var categoryProduct: [CategoryProduct]?
     var body: some View {
         VStack {
-            TitleView(title: "Mobile Phones", shouldHideButton: false)
+            TitleView(title: categoryProduct., shouldHideButton: false)
             VStack {
                 LazyVGrid(columns: gridLayouts, alignment: .center, spacing: 0, pinnedViews: []) {
-                    GridItemView()
-                    GridItemView()
-                    GridItemView()
-                    GridItemView()
+                    ForEach(categoryProduct!, id: \.self) { product in
+                        GridItemView()
+                    }
                 }
             }
             .padding(.vertical, 0)

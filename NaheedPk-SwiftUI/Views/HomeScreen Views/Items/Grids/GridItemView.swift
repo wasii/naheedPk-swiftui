@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GridItemView: View {
+    var product: CategoryProduct?
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             ZStack(alignment: .center) {

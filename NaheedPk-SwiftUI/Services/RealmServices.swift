@@ -50,15 +50,16 @@ class RealmServices: ObservableObject {
         return ""
     }
     
-    func updateToken(id: ObjectId, token: String) -> String {
+    func updateToken(previousToken: String, newToken: String) -> String {
         if let localRealm = localRealm {
             do {
-                let tokenToUpdate = localRealm.objects(BearerToken.self).filter(NSPredicate(format: "id == %@", id))
+                let tokenToUpdate = localRealm.objects(BearerToken.self).filter(NSPredicate(format: "token == %@", previousToken))
                 guard !tokenToUpdate.isEmpty else { return "" }
                 do {
                     try localRealm.write({
-                        tokenToUpdate[0].token = token
+                        tokenToUpdate[0].token = newToken
                     })
+                    return newToken
                 } catch let err {
                     print("error while updaing error: \(err.localizedDescription)")
                 }

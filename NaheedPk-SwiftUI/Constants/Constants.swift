@@ -12,7 +12,7 @@ import SwiftUI
 let AppDashboardJSON:       [AppDashboard] = Bundle.main.decode("appdashboard.json")
 let AppSliderJSON:          [AppSliders] = Bundle.main.decode("app_slider.json")
 let AppCategoriesJSON:      [AppCategories] = Bundle.main.decode("app_category.json")
-//let AppDashboardGridJSON:   [DashboardCategories] = Bundle.main.decode("appdashboard_grid.json")
+let AppDashboardGridJSON:   [DashboardCategories] = Bundle.main.decode("appdashboard_grid.json")
 
 ///COLOR
 let NativeBlueColor = "NativeBlueColor"

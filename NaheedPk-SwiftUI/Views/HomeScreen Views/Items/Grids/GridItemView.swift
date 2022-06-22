@@ -45,7 +45,7 @@ struct GridItemView: View {
             
         }
         .overlay(
-            RoundedRectangle(cornerRadius: 0)
+            RoundedRectangle(cornerRadius: 12)
                 .stroke(Color.gray, lineWidth: 0.5)
         )
         .overlay(

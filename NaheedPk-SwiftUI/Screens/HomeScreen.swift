@@ -24,23 +24,24 @@ struct HomeScreen: View {
                     VStack {
                         if !self.appDashboard.appSliders.isEmpty {
                             HomeScreenCarousel(appSlider: self.appDashboard.appSliders)
+                        } else {
+                            ProgressView()
                         }
                     }.frame(height: UIScreen.main.bounds.width / 1.8)
                     VStack {
                         if !self.appDashboard.appCategories.isEmpty {
                             HomeScreenCategoriesView()
+                        } else {
+                            ProgressView()
                         }
                     }
                     .frame(height: UIScreen.main.bounds.width / 1.3)
                     .frame(width: UIScreen.main.bounds.width)
                     VStack {
                         if !self.appDashboard.appDashboardGrids.isEmpty {
-                            HomeGridsBlocksView(dashboardCategory: <#T##DashboardCategories#>)
+                            HomeGridsBlocksView(dashboardCategory: self.appDashboard.appDashboardGrids)
                         }
-                    }
-                    GridParentView()
-                    BlocksView()
-                        
+                    }   
                     Spacer()
                 }
             }

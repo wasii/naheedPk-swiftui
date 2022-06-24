@@ -6,38 +6,54 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct GridItemView: View {
-    var product: CategoryProduct?
+    var product: CategoryProduct
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
             ZStack(alignment: .center) {
-                Image("grid-1")
+                WebImage(url: URL(string: product.imageMedium)!)
                     .resizable()
+                    .placeholder(Image(systemName: "1-category"))
                     .scaledToFit()
                     .frame(maxWidth:.infinity, maxHeight: .infinity)
                     .cornerRadius(10)
+                //                Image("grid-1")
+                //                    .resizable()
+                //                    .scaledToFit()
+                //                    .frame(maxWidth:.infinity, maxHeight: .infinity)
+                //                    .cornerRadius(10)
             }
             VStack(alignment: .leading, spacing: 4) {
-                Text("Dawlance Cooking Series Microwave Oven, 30 Liters, DW-131 HP")
+                Text(product.name)
                     .font(.footnote)
                     .multilineTextAlignment(.leading)
                     .lineLimit(3)
-                Text("Rs. 26,500.00")
+                Text(product.finalPrice)
                     .font(.footnote)
                     .fontWeight(.semibold)
-                Text("Rs. 29,500.00")
-                    .font(.footnote)
-                    .fontWeight(.light)
-                    .background(
-                        Color.gray
-                            .frame(height:1)
-                    )
-                HStack(spacing: 5) {
-                    ForEach(1...5, id: \.self) { _ in
-                        Image(systemName: "star.fill")
-                            .font(.footnote)
-                            .foregroundColor(Color.yellow)
+                if product.discount {
+                    Text("Rs. 29,500.00")
+                        .font(.footnote)
+                        .fontWeight(.light)
+                        .background(
+                            Color.gray
+                                .frame(height:1)
+                        )
+                }
+                
+                if product.reviewsSummary != "0.0" {
+                    let stringRating = product.reviewsSummary
+                    let intRating = Int(stringRating) ?? 1
+                    
+                    HStack(spacing: 5) {
+                        ForEach(1...5, id: \.self) { index in
+                            let condition = index <= intRating
+                            Image(systemName: condition ? "star.fill" : "star")
+                                .font(.footnote)
+                                .foregroundColor(Color.yellow)
+                        }
                     }
                 }
             }
@@ -51,20 +67,34 @@ struct GridItemView: View {
         )
         .overlay(
             HStack {
-                VStack {
-                    Image("percentage-bg")
-                        .resizable()
-                        .frame(width: 30, height:20)
-                    .padding(.top, 10)
-                    Spacer()
+                if product.discount {
+                    VStack {
+                        ZStack {
+                            Image("percentage-bg")
+                                .resizable()
+                                .frame(width: 40, height:35)
+                                .padding(.top, 10)
+                            Text("\(product.discountPercent)%\nOFF")
+                                .foregroundColor(.white)
+                                .font(.system(size: 10))
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.center)
+                                .lineLimit(2)
+                                .padding(.top, 10)
+                                .frame(width: 40, height:35)
+                        }
+                        Spacer()
+                    }
                 }
                 Spacer()
-                VStack {
-                    Image("Krachi-only")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                    .padding(.top, 10)
-                    Spacer()
+                if product.karachiOnly {
+                    VStack {
+                        Image("Krachi-only")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .padding(.top, 10)
+                        Spacer()
+                    }
                 }
             }
         )
@@ -72,9 +102,9 @@ struct GridItemView: View {
     }
 }
 
-struct GridItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        GridItemView()
-            .previewLayout(.sizeThatFits)
-    }
-}
+//struct GridItemView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GridItemView()
+//            .previewLayout(.sizeThatFits)
+//    }
+//}

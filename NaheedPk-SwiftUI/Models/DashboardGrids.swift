@@ -7,13 +7,13 @@
 
 import Foundation
 // MARK: - WelcomeElement
-struct DashboardCategories: Codable {
+struct DashboardCategories: Codable, Hashable {
     let type: String
     let data: CategoryDataClass
 }
 
 // MARK: - DataClass
-struct CategoryDataClass: Codable {
+struct CategoryDataClass: Codable, Hashable {
     let gridTitle: String?
     let background: String?
     let viewLinkType, viewLink: String?
@@ -64,7 +64,7 @@ struct CategoryProduct: Codable, Hashable {
 }
 
 // MARK: - Row
-struct CategoryRow: Codable {
+struct CategoryRow: Codable, Hashable {
     let columns: String
     let images: [CategoryImage]
 }

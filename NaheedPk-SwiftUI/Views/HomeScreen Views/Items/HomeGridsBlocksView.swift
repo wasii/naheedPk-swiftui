@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct HomeGridsBlocksView: View {
-    var dashboardCategory: DashboardCategories
+    var dashboardCategory: [DashboardCategories]
     var body: some View {
         VStack {
-            if dashboardCategory.type == "product_grid" {
-                GridParentView()
-//                dashboardCategory.data.products
-            } else {
-                BlocksView()
+            ForEach(dashboardCategory, id: \.self) { category in
+                if category.type == "product_grid" {
+                    GridParentView(categoryProduct: category.data)
+                } else {
+                    BlocksView(categoryProduct: category.data)
+                }
             }
         }
 //        ForEach(AppDashboardGridJSON, id: \.self) { grid in

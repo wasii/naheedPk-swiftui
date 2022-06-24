@@ -6,20 +6,21 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct BlocksView: View {
-//    let blocks: DashboardCategories
+    var categoryProduct: CategoryDataClass
     let images: [String] = ["block-1", "block-2", "block-3"]
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            TitleView(title: "Trending Brands", shouldHideButton: true)
+            TitleView(title: categoryProduct.title ?? "", shouldHideButton: true)
             VStack(spacing: 12) {
-                ForEach(images, id: \.self) { image in
-                    Image(image)
+                ForEach(categoryProduct.rows!, id: \.self) { row in
+                    WebImage(url: URL(string: row.images.first?.image ?? "")!)
                         .resizable()
                         .frame(height: 100)
                         .cornerRadius(10)
-                        .shadow(color: Color.black.opacity(0.4), radius: 5.0, x: 0, y: 0)
+                        .shadow(color: Color.black.opacity(0.4), radius: 5.0, x: 0, y: 0)    
                 }
             }
         }
@@ -28,9 +29,9 @@ struct BlocksView: View {
     }
 }
 
-struct BlocksView_Previews: PreviewProvider {
-    static var previews: some View {
-        BlocksView()
-            .previewLayout(.sizeThatFits)
-    }
-}
+//struct BlocksView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        BlocksView()
+//            .previewLayout(.sizeThatFits)
+//    }
+//}

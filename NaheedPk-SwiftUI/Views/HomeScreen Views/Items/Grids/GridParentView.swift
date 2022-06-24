@@ -6,17 +6,17 @@
 //
 
 import SwiftUI
-
+import SDWebImageSwiftUI
 struct GridParentView: View {
 //    var title: String
-    var categoryProduct: [CategoryProduct]?
+    var categoryProduct: CategoryDataClass
     var body: some View {
         VStack {
-            TitleView(title: categoryProduct., shouldHideButton: false)
+            TitleView(title: categoryProduct.gridTitle ?? "", shouldHideButton: false)
             VStack {
                 LazyVGrid(columns: gridLayouts, alignment: .center, spacing: 0, pinnedViews: []) {
-                    ForEach(categoryProduct!, id: \.self) { product in
-                        GridItemView()
+                    ForEach(categoryProduct.products!, id: \.self) { product in
+                        GridItemView(product: product)
                     }
                 }
             }
@@ -29,16 +29,16 @@ struct GridParentView: View {
         }
         .padding()
         .background(
-            Image("grid-background")
+            WebImage(url: URL(string: categoryProduct.background!)!)
                 .resizable()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         )
     }
 }
 
-struct GridParentView_Previews: PreviewProvider {
-    static var previews: some View {
-        GridParentView()
-            .previewLayout(.sizeThatFits)
-    }
-}
+//struct GridParentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GridParentView()
+//            .previewLayout(.sizeThatFits)
+//    }
+//}
